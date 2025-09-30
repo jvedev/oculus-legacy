@@ -1,6 +1,9 @@
 /* XDOM - DOM Manipulation Library */
 /* Extracted from session/functions.js for modularization */
 
+// Import BrowserDetect dependency
+import './browser-detect.js';
+
 /**
  * XDOM - Cross-browser DOM manipulation library
  * Provides unified interface for DOM operations across different browsers

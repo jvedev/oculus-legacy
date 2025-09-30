@@ -273,3 +273,9 @@ function checkForSupportedBrowser(){
         return false;
     }
 }
+// Export BrowserDetect globally for backward compatibility
+if (typeof window !== 'undefined') {
+    window.BrowserDetect = BrowserDetect;
+}
+
+export default BrowserDetect;
