@@ -3,6 +3,17 @@ import '../../shared/utils/string-prototypes.js';
 import '../../shared/utils/date-prototypes.js';
 import '../../shared/legacy-functions.js';
 
+// Initialize NAV and GUI objects
+window.NAV = window.NAV || {};
+window.GUI = window.GUI || {};
+
+// Import modular components
+import XDOM from '../../shared/dom/xdom.js';
+import '../../shared/navigation/stack.js';
+import '../../shared/navigation/macro.js';
+import '../../shared/navigation/sub-procedure.js';
+import GUI from '../../shared/gui/components.js';
+
 // Initialize main variables as globals immediately 
 const TOP = window.top;
 const MAIN = window;

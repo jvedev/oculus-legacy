@@ -1,7 +1,18 @@
 // Session entry point
 import '../../shared/utils/string-prototypes.js';
-import '../../shared/session-language.js';
+import '../../shared/session-language.js';  
 import '../../shared/session-scripts.js';
+
+// Initialize NAV and GUI objects before importing modules that use them
+window.NAV = window.NAV || {};
+window.GUI = window.GUI || {};
+
+// Import modular components
+import XDOM from '../../shared/dom/xdom.js';
+import '../../shared/navigation/stack.js';
+import '../../shared/navigation/macro.js';
+import '../../shared/navigation/sub-procedure.js';
+import GUI from '../../shared/gui/components.js';
 
 // Session specific globals
 var PFMBOX = navigator;
