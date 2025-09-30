@@ -1,15 +1,7 @@
 // Session entry point
 import '../../shared/utils/string-prototypes.js';
-import { 
-    canHaveFocus, 
-    getRecordNumber, 
-    addInputField, 
-    time, 
-    timeEnd, 
-    scrollIntoView, 
-    activateOneButton, 
-    isActive 
-} from '../../shared/utils/common-utils.js';
+import '../../shared/session-language.js';
+import '../../shared/session-scripts.js';
 
 // Session specific globals
 var PFMBOX = navigator;
@@ -59,14 +51,4 @@ window.OCULUS = OCULUS;
 window.MAIN = MAIN;
 window.MAINDOC = MAINDOC;
 window.PFMMDO = PFMMDO;
-
-// Make utility functions available globally
-window.canHaveFocus = canHaveFocus;
-window.getRecordNumber = getRecordNumber;
-window.addInputField = addInputField;
-window.time = time;
-window.timeEnd = timeEnd;
-window.scrollIntoView = scrollIntoView;
-window.activateOneButton = activateOneButton;
-window.isActive = isActive;
 window.initSessionGlobals = initSessionGlobals;
